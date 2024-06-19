@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hehe</title>
+
+    <style>
+        body{
+            background-color: red;
+        }
+        .portss{
+            margin: alto;
+            background-color: aliceblue;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+        }
+        #sim{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: white;
+            border-radius: 10px;
+            color: white;
+        }
+        #Nao{
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 90px;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="portss">
+        <h1> fototeta?</h1>
+        <h2>vai me mandar fototeta?</h2>
+
+        
+
+        <button id="sim">Sim </button>
+        <button  onmouseover="fuja()" id="Nao">Não</button>
+        <img src="hhh.png" alt="sla">
+    </div>
+    </main>
+    
+
+    <script>
+        function fuja(){
+            var botaoNao = document.getelementbyld("Nao")
+
+            var largurajanela = window.innerWidth;
+            var alturajanela = window.innerHeight;
+
+            var maxX = largurajanela - botaoNao.offsetwidth;
+            var maxY = alturajanela - botaoNao.offsetwidth;
+
+            var aleatorioX = Math.floor(Math.random() * maxX)
+            var aleatorioY = Math.floor(Math.random() * maxY)
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.stye.top = aleatorioY + "px"
+        }
+    </script>
+    
+</body>
+</html>
